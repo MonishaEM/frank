@@ -1,21 +1,19 @@
 #include<stdio.h>
 int main()
 {
-int n,k;
-scanf("%d%d",&n,&k);
-k=1;
-for(i=1;i<=5;i++)
+int n;
+scanf("%d",&n);
+while(n!=0)
 {
-k=k*2;
-break;
-}
-if(k==n)
+if(n%2!=0)
+n=n/2;
 {
-printf("yes the num is power of two");
+printf("yes");
 }
 else
 {
-printf("no the num is power of two");
+printf("no");
+}
 }
 return 0;
 }
